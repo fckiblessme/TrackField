@@ -1,35 +1,96 @@
-"""
-Routes and views for the bottle application.
-"""
-
-from bottle import route, view
-from datetime import datetime
+import bottle
+from bottle import route, template
 
 @route('/')
-@route('/home')
-@view('index')
-def home():
-    """Renders the home page."""
-    return dict(
-        year=datetime.now().year
-    )
-
-@route('/contact')
-@view('contact')
-def contact():
-    """Renders the contact page."""
-    return dict(
-        title='Contact',
-        message='Your contact page.',
-        year=datetime.now().year
-    )
+def index():
+    """Главная страница"""
+    return template('index', title='Главная')
 
 @route('/about')
-@view('about')
 def about():
-    """Renders the about page."""
-    return dict(
-        title='About',
-        message='Your application description page.',
-        year=datetime.now().year
-    )
+    """Страница 'О нас'"""
+    return template('about', title='О нас')
+
+@route('/sports')
+def sports():
+    """Страница 'Виды спорта'"""
+    # Данные для карточек видов спорта
+    sports_data = [
+        {
+            'name': 'Бег',
+            'description': 'Спринт, средние дистанции, марафон, барьерный бег',
+            'details': 'Королевская дисциплина легкой атлетики'
+        },
+        {
+            'name': 'Прыжки',
+            'description': 'В высоту, с шестом, в длину, тройной прыжок',
+            'details': 'Технически сложные виды'
+        },
+        {
+            'name': 'Метания',
+            'description': 'Копье, диск, молот, толкание ядра',
+            'details': 'Требуют силы и координации',
+        },
+        {
+            'name': 'Многоборье',
+            'description': 'Десятиборье, семиборье, пятиборье',
+            'details': 'Комплексные соревнования'
+        }
+    ]
+    return template('sports', title='Виды спорта', sports=sports_data)
+
+@route('/competitions')
+def competitions():
+    """Страница 'Соревнования'"""
+    # Данные о соревнованиях
+    events = [
+        {
+            'name': 'Чемпионат мира',
+            'date': '15-24 августа 2026',
+            'location': 'Токио, Япония',
+            'status': 'предстоящее'
+        },
+        {
+            'name': 'Чемпионат Европы',
+            'date': '7-12 июня 2026',
+            'location': 'Париж, Франция',
+            'status': 'предстоящее'
+        },
+        {
+            'name': 'Национальный Чемпионат',
+            'date': '3-5 февраля 2026',
+            'location': 'Москва, Россия',
+            'status': 'завершено',
+            'results': 'Результаты'
+        },
+        {
+            'name': 'Зимний кубок',
+            'date': '20-22 января 2026',
+            'location': 'Санкт-Петербург',
+            'status': 'завершено',
+            'results': 'Результаты'
+        }
+    ]
+    return template('competitions', title='Соревнования', events=events)
+
+@route('/contact')
+def contact():
+    """Страница 'Контакты'"""
+    return template('contact', title='Контакты')
+
+@route('/news')
+def news():
+    """Страница 'Новости'"""
+    news_items = [
+        {
+            'title': 'Новый рекорд мира в беге на 100м',
+            'date': '25 февраля 2026',
+            'preview': 'Легендарный спринтер показал невероятный результат...'
+        },
+        {
+            'title': 'Подготовка к Олимпийским играм',
+            'date': '20 февраля 2026',
+            'preview': 'Сборная Франции начинает подготовку к главному старту четырехлетия...'
+        }
+    ]
+    return template('news', title="Новости", news=news_items)

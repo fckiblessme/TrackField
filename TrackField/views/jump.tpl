@@ -64,6 +64,30 @@
 </div>
 
 <div class="section">
+    <h2>Разрядные нормативы — Прыжки в длину</h2>
+    <table class="records-table">
+        <thead>
+            <tr>
+                <th>Разряд</th>
+                <th>Мужчины (м)</th>
+                <th>Женщины (м)</th>
+            </tr>
+        </thead>
+        <tbody>
+            <tr><td>МСМК</td><td>7.95</td><td>6.53</td></tr>
+            <tr><td>МС</td><td>7.60</td><td>6.20</td></tr>
+            <tr><td>КМС</td><td>7.10</td><td>5.80</td></tr>
+            <tr><td>1 разряд</td><td>6.60</td><td>5.40</td></tr>
+            <tr><td>2 разряд</td><td>6.00</td><td>4.90</td></tr>
+            <tr><td>3 разряд</td><td>5.50</td><td>4.00</td></tr>
+            <tr><td>1 юношеский</td><td>5.00</td><td>4.40</td></tr>
+            <tr><td>2 юношеский</td><td>4.50</td><td>4.00</td></tr>
+            <tr><td>3 юношеский</td><td>4.00</td><td>3.60</td></tr>
+        </tbody>
+    </table>
+</div>
+
+<div class="section">
     <h2>Тройной прыжок</h2>
     
     <h3>Что такое тройной прыжок?</h3>
@@ -119,6 +143,29 @@
     </table>
 </div>
 
+<div class="section">
+    <h2>Разрядные нормативы — Тройной прыжок</h2>
+    <table class="records-table">
+        <thead>
+            <tr>
+                <th>Разряд</th>
+                <th>Мужчины (м)</th>
+                <th>Женщины (м)</th>
+            </tr>
+        </thead>
+        <tbody>
+            <tr><td>МСМК</td><td>16.90</td><td>14.04</td></tr>
+            <tr><td>МС</td><td>15.90</td><td>13.40</td></tr>
+            <tr><td>КМС</td><td>14.90</td><td>12.50</td></tr>
+            <tr><td>1 разряд</td><td>13.90</td><td>11.90</td></tr>
+            <tr><td>2 разряд</td><td>12.90</td><td>11.00</td></tr>
+            <tr><td>3 разряд</td><td>11.80</td><td>10.30</td></tr>
+            <tr><td>1 юношеский</td><td>10.70</td><td>9.50</td></tr>
+            <tr><td>2 юношеский</td><td>9.70</td><td>8.80</td></tr>
+            <tr><td>3 юношеский</td><td>8.70</td><td>8.00</td></tr>
+        </tbody>
+    </table>
+</div>
 
 <div class="section">
     <h2>Общие правила</h2>

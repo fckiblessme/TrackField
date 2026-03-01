@@ -1,15 +1,19 @@
+from datetime import datetime 
 import bottle
 from bottle import route, template
 
+def render(tpl_name, **kwargs):
+    kwargs['year'] = datetime.now().year
+    return template(tpl_name, **kwargs)
 @route('/')
 def index():
     """Главная страница"""
-    return template('index', title='Главная')
+    return render('index', title='Главная')
 
 @route('/about')
 def about():
     """Страница 'О нас'"""
-    return template('about', title='О нас')
+    return render('about', title='О нас')
 
 @route('/sports')
 def sports():
@@ -37,7 +41,7 @@ def sports():
             'details': 'Комплексные соревнования'
         }
     ]
-    return template('sports', title='Виды спорта', sports=sports_data)
+    return render('sports', title='Виды спорта', sports=sports_data)
 
 @route('/competitions')
 def competitions():
@@ -71,12 +75,12 @@ def competitions():
             'results': 'Результаты'
         }
     ]
-    return template('competitions', title='Соревнования', events=events)
+    return render('competitions', title='Соревнования', events=events)
 
 @route('/contact')
 def contact():
     """Страница 'Контакты'"""
-    return template('contact', title='Контакты')
+    return render('contact', title='Контакты')
 
 @route('/news')
 def news():
@@ -93,4 +97,13 @@ def news():
             'preview': 'Сборная Франции начинает подготовку к главному старту четырехлетия...'
         }
     ]
-    return template('news', title="Новости", news=news_items)
+    return render('news', title="Новости", news=news_items)
+@route('/race-walking')
+def race_walking():
+    """Страница 'Спортивная ходьба'"""
+    return render('race_walking', title='Спортивная ходьба')
+
+@route('/high-jump')
+def high_jump():
+    """Страница 'Прыжки в высоту'"""
+    return render('high_jump', title='Прыжки в высоту')

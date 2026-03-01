@@ -18,7 +18,7 @@
     <SuppressCollectPythonCloudServiceFiles>true</SuppressCollectPythonCloudServiceFiles>
     <Name>TrackField</Name>
     <RootNamespace>TrackField</RootNamespace>
-    <InterpreterId>MSBuild|env|$(MSBuildProjectFullPath)</InterpreterId>
+    <InterpreterId>MSBuild|env1|$(MSBuildProjectFullPath)</InterpreterId>
     <WebBrowserPort>8080</WebBrowserPort>
   </PropertyGroup>
   <PropertyGroup Condition=" '$(Configuration)' == 'Debug' ">
@@ -85,6 +85,22 @@
     <Content Include="static\content\images\pole_vault\legends\legends_duplantis.jpg" />
     <Content Include="static\content\images\pole_vault\legends\legends_isinbaeva.jpg" />
     <Content Include="static\content\images\pole_vault\legends\legends_suhr.jpg" />
+    <Content Include="static\images\alekseyvoevodin.jpg" />
+    <Content Include="static\images\elenalashmanova.jpg" />
+    <Content Include="static\images\fosbury.jpg" />
+    <Content Include="static\images\highjump.jpg" />
+    <Content Include="static\images\jumpwithstick.jpg" />
+    <Content Include="static\images\kostadinova.jpg" />
+    <Content Include="static\images\lasitskene.jpg" />
+    <Content Include="static\images\longjump.jpg" />
+    <Content Include="static\images\mnogoborie.jpg" />
+    <Content Include="static\images\pushball.jpg" />
+    <Content Include="static\images\pushstick.jpg" />
+    <Content Include="static\images\racewalking.jpg" />
+    <Content Include="static\images\run.jpg" />
+    <Content Include="static\images\sergeymorozov.jpg" />
+    <Content Include="static\images\sotomayor.jpg" />
+    <Content Include="static\images\yohanndiniz.jpg" />
     <Content Include="static\scripts\bootstrap.js" />
     <Content Include="static\scripts\bootstrap.min.js" />
     <Content Include="static\scripts\jquery-1.10.2.intellisense.js" />
@@ -117,6 +133,15 @@
     <Content Include="views\run.tpl" />
   </ItemGroup>
   <ItemGroup>
+    <Interpreter Include="env1\">
+      <Id>env1</Id>
+      <Version>0.0</Version>
+      <Description>env1 (Python 3.13 (64-bit))</Description>
+      <InterpreterPath>Scripts\python.exe</InterpreterPath>
+      <WindowsInterpreterPath>Scripts\pythonw.exe</WindowsInterpreterPath>
+      <PathEnvironmentVariable>PYTHONPATH</PathEnvironmentVariable>
+      <Architecture>X64</Architecture>
+    </Interpreter>
     <Interpreter Include="env\">
       <Id>env</Id>
       <Version>0.0</Version>

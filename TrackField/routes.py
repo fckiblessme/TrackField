@@ -107,3 +107,8 @@ def race_walking():
 def high_jump():
     """Страница 'Прыжки в высоту'"""
     return render('high_jump', title='Прыжки в высоту')
+
+@route('/pole-vault')
+def pole_vault():
+    """Страница 'Прыжки с шестом'"""
+    return render('pole_vault', title='Прыжки с шестом')

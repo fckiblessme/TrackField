@@ -37,11 +37,22 @@
     <Folder Include="static\" />
     <Folder Include="static\content\" />
     <Folder Include="static\fonts\" />
+    <Folder Include="static\content\images\" />
+    <Folder Include="static\content\images\pole_vault\" />
+    <Folder Include="static\content\images\pole_vault\technique\" />
+    <Folder Include="static\content\images\pole_vault\athletes\" />
+    <Folder Include="static\content\images\pole_vault\legends\" />
     <Folder Include="static\scripts\" />
     <Folder Include="views\" />
   </ItemGroup>
   <ItemGroup>
     <Content Include="requirements.txt" />
+    <Content Include="static\content\images\pole_vault\athletes\feofanova.jpg" />
+    <Content Include="static\content\images\pole_vault\athletes\isinbaeva.jpg" />
+    <Content Include="static\content\images\pole_vault\athletes\morgunov.jpg" />
+    <Content Include="static\content\images\pole_vault\athletes\mudrov.jpg" />
+    <Content Include="static\content\images\pole_vault\pole-vault-hero.jpg" />
+    <Content Include="static\content\images\pole_vault\technique\pole-vault-technique.jpg" />
     <Content Include="static\content\site.css" />
     <Content Include="static\content\style.css">
       <SubType>Code</SubType>
@@ -50,6 +61,10 @@
     <Content Include="static\fonts\glyphicons-halflings-regular.svg" />
     <Content Include="static\fonts\glyphicons-halflings-regular.ttf" />
     <Content Include="static\fonts\glyphicons-halflings-regular.woff" />
+    <Content Include="static\content\images\pole_vault\legends\legends_bubka.jpg" />
+    <Content Include="static\content\images\pole_vault\legends\legends_duplantis.jpg" />
+    <Content Include="static\content\images\pole_vault\legends\legends_isinbaeva.jpg" />
+    <Content Include="static\content\images\pole_vault\legends\legends_suhr.jpg" />
     <Content Include="static\scripts\bootstrap.js" />
     <Content Include="static\scripts\bootstrap.min.js" />
     <Content Include="static\scripts\jquery-1.10.2.intellisense.js" />
@@ -67,6 +82,7 @@
     <Content Include="static\scripts\_references.js" />
     <Content Include="views\about.tpl" />
     <Content Include="views\contact.tpl" />
+    <Content Include="views\pole_vault.tpl" />
     <Content Include="views\high_jump.tpl">
       <SubType>Code</SubType>
     </Content>

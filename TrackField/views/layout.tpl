@@ -21,6 +21,7 @@
                         <li><a href="/race-walking" {{'class=active' if title=='Спортивная ходьба' else ''}}>Спортивная ходьба</a></li>
                         <li><a href="/high-jump" {{'class=active' if title=='Прыжки в высоту' else ''}}>Прыжки в высоту</a></li>
                         <li><a href="/run" {{'class=active' if title=='Бег' else ''}}>Бег</a></li>
+                        <li><a href="/sprints" {{'class=active' if title=='Бег' else ''}}>Бег</a></li>
                         <li><a href="/long-jump" {{'class=active' if title=='Прыжки в длину' else ''}}>Прыжки в длину</a></li>
                         <li><a href="/pole-vault" {{'class=active' if title=='Прыжки с шестом' else ''}}>Прыжки с шестом</a></li>
                         <li><a href="/shot-put" {{'class=active' if title=='Толкание ядра' else ''}}>Толкание ядра</a></li>

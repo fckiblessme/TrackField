@@ -1,4 +1,4 @@
-/* �������� ����� */
+/* ÎÑÍÎÂÍÛÅ ÖÂÅÒÀ */
 :root {
     --dark-gray: #333333;
     --light-gray: #E5E5E5;
@@ -9,7 +9,7 @@
     --shadow: rgba(0,0,0,0.1);
 }
 
-/* ����� ����� */
+/* Îáùèå ñòèëè */
 * {
     margin: 0;
     padding: 0;
@@ -29,7 +29,7 @@ body {
     padding: 0 20px;
 }
 
-/* ����� */
+/* Øàïêà */
 .header {
     background: var(--dark-gray);
     color: var(--text-light);
@@ -58,7 +58,7 @@ body {
     color: inherit;
 }
 
-/* ��������� */
+/* Íàâèãàöèÿ */
 .nav ul {
     list-style: none;
     display: flex;
@@ -79,7 +79,7 @@ body {
         background: var(--accent);
     }
 
-/* ������� �������� - Hero */
+/* Ãëàâíàÿ ñòðàíèöà */
 .hero {
     text-align: center;
     padding: 4rem 2rem;
@@ -109,7 +109,7 @@ body {
     flex-wrap: wrap;
 }
 
-/* ������ */
+/* Êíîïêè */
 .btn {
     display: inline-block;
     background: var(--accent);
@@ -134,7 +134,7 @@ body {
         background: #1a1a1a;
     }
 
-/* ��������� ������ */
+/* Çàãîëîâêè ñåêöèé */
 .section-title {
     text-align: center;
     margin: 3rem 0 2rem;
@@ -153,7 +153,7 @@ body {
         border-radius: 2px;
     }
 
-/* �������� ��������� */
+/* Êàðòî÷êè äèñöèïëèí */
 .disciplines-grid {
     display: grid;
     grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
@@ -200,7 +200,7 @@ body {
     font-weight: 600;
 }
 
-/* ����� */
+/* Ôàêòû */
 .facts-grid {
     display: grid;
     grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
@@ -223,7 +223,7 @@ body {
     margin-bottom: 0.5rem;
 }
 
-/* ������� */
+/* Íîâîñòè */
 .news-section {
     margin: 3rem 0;
 }
@@ -250,7 +250,7 @@ body {
     font-weight: 500;
 }
 
-/* ������ */
+/* Öèòàòà */
 .quote-section {
     background: var(--dark-gray);
     color: var(--white);
@@ -273,7 +273,7 @@ body {
     font-weight: 500;
 }
 
-/* �������� ������ */
+/* Ïîëåçíûå ññûëêè */
 .links-grid {
     display: grid;
     grid-template-columns: repeat(auto-fit, minmax(220px, 1fr));
@@ -316,7 +316,7 @@ body {
     color: #666;
 }
 
-/* �������� ��������� */
+/* Ñòðàíèöû äèñöèïëèí */
 .discipline-hero {
     background: linear-gradient(135deg, var(--dark-gray), #1a1a1a);
     color: var(--white);
@@ -353,7 +353,7 @@ body {
         margin-bottom: 1.5rem;
     }
 
-/* ������� */
+/* Òàáëèöû */
 .records-table {
     width: 100%;
     border-collapse: collapse;
@@ -380,7 +380,7 @@ body {
         background: var(--light-gray);
     }
 
-/* �������� ����������� */
+/* Êàðòî÷êè ñïîðòñìåíîâ */
 .athletes-grid {
     display: grid;
     grid-template-columns: repeat(auto-fit, minmax(220px, 1fr));
@@ -422,7 +422,7 @@ body {
         margin-bottom: 0.5rem;
     }
 
-/* ������� */
+/* Òåõíèêà */
 .technique-phases {
     display: grid;
     grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
@@ -441,19 +441,8 @@ body {
         margin-bottom: 1rem;
     }
 
-/* ����� */
-.technique-video {
-    margin: 2rem 0;
-    text-align: center;
-}
 
-    .technique-video iframe {
-        max-width: 100%;
-        border-radius: 8px;
-        box-shadow: 0 5px 15px var(--shadow);
-    }
-
-/* ������� */
+/* Ñîáûòèÿ */
 .events-list {
     list-style: none;
     padding: 0;
@@ -473,7 +462,7 @@ body {
         text-decoration: none;
     }
 
-/* ������ */
+/* Ïîäâàë */
 .footer {
     background: var(--dark-gray);
     color: var(--white);
@@ -500,7 +489,7 @@ body {
             color: var(--accent);
         }
 
-/* ������������ */
+/* Àäàïòèâíîñòü */
 @media (max-width: 768px) {
     .header-content {
         flex-direction: column;
@@ -531,6 +520,297 @@ body {
             font-size: 2rem;
         }
 }
+/* Êàðòî÷êè ñïîðòñìåíîâ ñ èçîáðàæåíèÿìè */
+.athletes-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+    gap: 1.5rem;
+    margin: 2rem 0;
+}
+
+.athlete-card {
+    background: var(--white);
+    border-radius: 10px;
+    overflow: hidden;
+    box-shadow: 0 3px 10px var(--shadow);
+    transition: transform 0.3s, box-shadow 0.3s;
+    text-align: center;
+    padding-bottom: 1.5rem;
+}
+
+    .athlete-card:hover {
+        transform: translateY(-5px);
+        box-shadow: 0 8px 20px rgba(0,168,150,0.2);
+    }
+
+.athlete-image {
+    width: 100%;
+    height: 200px;
+    object-fit: cover;
+    object-position: center;
+    border-bottom: 3px solid var(--accent);
+    transition: transform 0.3s;
+}
+
+.athlete-card:hover .athlete-image {
+    transform: scale(1.02);
+}
+
+.athlete-card h3 {
+    color: var(--dark-gray);
+    margin: 1rem 0 0.5rem;
+    font-size: 1.2rem;
+    padding: 0 0.5rem;
+}
+
+.athlete-achievement {
+    color: var(--accent);
+    font-weight: 600;
+    margin-bottom: 0.5rem;
+    font-size: 0.95rem;
+    padding: 0 1rem;
+}
+
+.athlete-detail {
+    color: #666;
+    font-size: 0.9rem;
+    line-height: 1.4;
+    padding: 0 1rem;
+}
+/* Ñòèëè äëÿ òàáëèöû ðàçðÿäíûõ íîðìàòèâîâ */
+.standards-table {
+    width: 100%;
+    border-collapse: collapse;
+    margin: 2rem 0;
+    background: var(--white);
+    border-radius: 12px;
+    overflow: hidden;
+    box-shadow: 0 4px 15px var(--shadow);
+}
+
+    .standards-table th {
+        background: var(--dark-gray);
+        color: var(--white);
+        padding: 1.5rem 2rem; /* Óâåëè÷åííûå îòñòóïû */
+        text-align: center;
+        font-size: 1.2rem;
+        font-weight: 600;
+        letter-spacing: 0.5px;
+        text-transform: uppercase;
+    }
+
+    .standards-table td {
+        padding: 1.2rem 2rem; /* Óâåëè÷åííûå îòñòóïû */
+        text-align: center;
+        border-bottom: 1px solid var(--light-gray);
+        font-size: 1.1rem;
+    }
+
+    .standards-table tr:last-child td {
+        border-bottom: none;
+    }
+
+    .standards-table tbody tr:hover {
+        background: var(--light-gray);
+        transition: background 0.3s;
+    }
+
+    .standards-table td:first-child {
+        font-weight: 600;
+        color: var(--dark-gray);
+        text-align: left;
+        background: rgba(0,168,150,0.05);
+    }
+/* Ñòèëè äëÿ òàáëèöû ñîðåâíîâàíèé */
+.competitions-table {
+    width: 100%;
+    border-collapse: collapse;
+    margin: 1.5rem 0;
+    background: var(--white);
+    border-radius: 10px;
+    overflow: hidden;
+    box-shadow: 0 4px 12px var(--shadow);
+}
+
+    .competitions-table th {
+        background: var(--dark-gray);
+        color: var(--white);
+        padding: 1.2rem 1rem;
+        text-align: left;
+        font-size: 1.1rem;
+        font-weight: 600;
+    }
+
+    .competitions-table td {
+        padding: 1.2rem 1rem;
+        border-bottom: 1px solid var(--light-gray);
+        vertical-align: top;
+    }
+
+    .competitions-table tr:last-child td {
+        border-bottom: none;
+    }
+
+    .competitions-table tbody tr:hover {
+        background: var(--light-gray);
+        transition: background 0.3s;
+    }
+
+.comp-name {
+    font-weight: 600;
+    color: var(--dark-gray);
+    width: 35%;
+}
+
+.comp-details {
+    width: 45%;
+}
+
+.comp-date {
+    font-weight: 500;
+    color: var(--accent);
+}
+
+.comp-location {
+    color: #666;
+    font-size: 0.95rem;
+}
+
+.comp-link {
+    width: 20%;
+    text-align: center;
+}
+
+.btn-small {
+    display: inline-block;
+    background: var(--accent);
+    color: var(--white);
+    padding: 0.5rem 1rem;
+    text-decoration: none;
+    border-radius: 4px;
+    font-size: 0.9rem;
+    transition: background 0.3s;
+    white-space: nowrap;
+}
+
+    .btn-small:hover {
+        background: #00816b;
+    }
+/* Ñòèëè äëÿ èíôîðìàöèîííûõ áëîêîâ */
+.info-block {
+    background: var(--light-gray);
+    padding: 1.5rem;
+    border-radius: 8px;
+    margin-bottom: 2rem;
+    border-left: 4px solid var(--accent);
+}
+
+.info-text {
+    font-size: 1.1rem;
+    line-height: 1.7;
+    color: var(--dark-gray);
+}
+
+/* Ñòèëè äëÿ ïðàâèë */
+.rules-block {
+    margin: 2rem 0;
+}
+
+    .rules-block h3 {
+        color: var(--dark-gray);
+        margin-bottom: 1.5rem;
+        font-size: 1.3rem;
+    }
+
+.rules-list {
+    list-style: none;
+    padding: 0;
+}
+
+    .rules-list li {
+        background: var(--white);
+        padding: 1.2rem 1.5rem;
+        margin-bottom: 1rem;
+        border-radius: 8px;
+        box-shadow: 0 2px 5px var(--shadow);
+        display: flex;
+        align-items: flex-start;
+        gap: 1rem;
+        transition: transform 0.3s, box-shadow 0.3s;
+    }
+
+        .rules-list li:hover {
+            transform: translateX(5px);
+            box-shadow: 0 5px 15px var(--shadow);
+        }
+
+.rule-icon {
+    font-size: 1.8rem;
+    min-width: 2.5rem;
+    text-align: center;
+}
+
+.rules-list li strong {
+    color: var(--accent);
+    display: block;
+    margin-bottom: 0.3rem;
+}
+
+.button-container {
+    text-align: center;
+    margin: 2rem 0 1rem;
+}
+
+/* Ñòèëè äëÿ òåõíèêè */
+.technique-content {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 2rem;
+    margin: 2rem 0;
+}
+
+.technique-steps h3 {
+    color: var(--dark-gray);
+    margin-bottom: 1.5rem;
+}
+
+.steps-list {
+    list-style: none;
+    padding: 0;
+}
+
+    .steps-list li {
+        display: flex;
+        gap: 1rem;
+        margin-bottom: 1.5rem;
+        background: var(--light-gray);
+        padding: 1.2rem;
+        border-radius: 8px;
+        transition: transform 0.3s;
+    }
+
+        .steps-list li:hover {
+            transform: translateY(-3px);
+            box-shadow: 0 5px 15px var(--shadow);
+        }
+
+.step-number {
+    background: var(--accent);
+    color: var(--white);
+    width: 2.5rem;
+    height: 2.5rem;
+    border-radius: 50%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-weight: bold;
+    font-size: 1.2rem;
+    flex-shrink: 0;
+}
+
+.step-content {
+    flex: 1;
+}
 
 .athlete-card {
     display: flex;
@@ -546,3 +826,63 @@ body {
     border-radius: 5% !important;
 }
 
+    .step-content strong {
+        color: var(--dark-gray);
+        display: block;
+        margin-bottom: 0.3rem;
+        font-size: 1.1rem;
+    }
+
+    .step-content p {
+        color: #666;
+        font-size: 0.95rem;
+        margin: 0;
+    }
+/* Ñòèëè äëÿ èçîáðàæåíèé äèñöèïëèí */
+.discipline-image {
+    width: 100%;
+    height: 160px;
+    object-fit: cover;
+    border-radius: 8px 8px 0 0;
+    margin-bottom: 1rem;
+    transition: transform 0.3s;
+}
+
+.discipline-card:hover .discipline-image {
+    transform: scale(1.02);
+}
+
+/* Îáíîâëåííûå ñòèëè äëÿ êàðòî÷åê äèñöèïëèí ñ èçîáðàæåíèÿìè */
+.discipline-card {
+    background: var(--white);
+    border-radius: 10px;
+    overflow: hidden;
+    text-decoration: none;
+    color: var(--dark-gray);
+    box-shadow: 0 3px 10px var(--shadow);
+    transition: transform 0.3s, box-shadow 0.3s;
+    display: flex;
+    flex-direction: column;
+    padding: 0; 
+    padding-bottom: 1.5rem;
+}
+
+    .discipline-card h3 {
+        color: var(--dark-gray);
+        margin: 0.5rem 1rem 0.5rem;
+        font-size: 1.3rem;
+    }
+
+    .discipline-card p {
+        color: #666;
+        margin: 0 1rem 1rem;
+        font-size: 0.95rem;
+        flex-grow: 1;
+    }
+
+.card-link {
+    color: var(--accent);
+    font-weight: 600;
+    margin: 0 1rem;
+    display: inline-block;
+}

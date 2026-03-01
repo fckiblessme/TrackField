@@ -5,6 +5,7 @@ from bottle import route, template
 def render(tpl_name, **kwargs):
     kwargs['year'] = datetime.now().year
     return template(tpl_name, **kwargs)
+
 @route('/')
 def index():
     """Главная страница"""
@@ -98,6 +99,8 @@ def news():
         }
     ]
     return render('news', title="Новости", news=news_items)
+
+# Маршруты для дисциплин
 @route('/race-walking')
 def race_walking():
     """Страница 'Спортивная ходьба'"""
@@ -107,7 +110,18 @@ def race_walking():
 def high_jump():
     """Страница 'Прыжки в высоту'"""
     return render('high_jump', title='Прыжки в высоту')
+
 @route('/run')
 def run():
     """Страница 'Бег'"""
     return render('run', title='Бег')
+
+@route('/pole-vault')
+def pole_vault():
+    """Страница 'Прыжки с шестом'"""
+    return render('pole_vault', title='Прыжки с шестом')
+
+@route('/shot-put')
+def shot_put():
+    """Страница 'Толкание ядра'"""
+    return render('shot_put', title='Толкание ядра')

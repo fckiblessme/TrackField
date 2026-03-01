@@ -36,17 +36,19 @@
   <ItemGroup>
     <Folder Include="static\" />
     <Folder Include="static\content\" />
+    <Folder Include="static\content\images\" />
+    <Folder Include="static\content\images\pole_vault\" />
+    <Folder Include="static\content\images\pole_vault\technique\" />
+    <Folder Include="static\content\images\pole_vault\athletes\" />
+    <Folder Include="static\content\images\pole_vault\legends\" />
     <Folder Include="static\content\images\shot_put\" />
     <Folder Include="static\content\images\shot_put\legends\" />
     <Folder Include="static\content\images\shot_put\athletes\" />
     <Folder Include="static\content\images\shot_put\equipment\" />
     <Folder Include="static\content\images\shot_put\technique\" />
     <Folder Include="static\fonts\" />
-    <Folder Include="static\content\images\" />
-    <Folder Include="static\content\images\pole_vault\" />
-    <Folder Include="static\content\images\pole_vault\technique\" />
-    <Folder Include="static\content\images\pole_vault\athletes\" />
-    <Folder Include="static\content\images\pole_vault\legends\" />
+    <Folder Include="static\images\" />
+    <Folder Include="static\images\athletes\" />
     <Folder Include="static\scripts\" />
     <Folder Include="views\" />
   </ItemGroup>
@@ -112,6 +114,7 @@
     <Content Include="views\race_walking.tpl">
       <SubType>Code</SubType>
     </Content>
+    <Content Include="views\run.tpl" />
   </ItemGroup>
   <ItemGroup>
     <Interpreter Include="env\">

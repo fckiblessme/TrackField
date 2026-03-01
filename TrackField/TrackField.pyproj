@@ -37,6 +37,8 @@
     <Folder Include="static\" />
     <Folder Include="static\content\" />
     <Folder Include="static\fonts\" />
+    <Folder Include="static\images\" />
+    <Folder Include="static\images\athletes\" />
     <Folder Include="static\scripts\" />
     <Folder Include="views\" />
   </ItemGroup>
@@ -77,6 +79,7 @@
     <Content Include="views\race_walking.tpl">
       <SubType>Code</SubType>
     </Content>
+    <Content Include="views\run.tpl" />
   </ItemGroup>
   <ItemGroup>
     <Interpreter Include="env\">

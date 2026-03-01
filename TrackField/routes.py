@@ -107,3 +107,7 @@ def race_walking():
 def high_jump():
     """Страница 'Прыжки в высоту'"""
     return render('high_jump', title='Прыжки в высоту')
+@route('/run')
+def run():
+    """Страница 'Бег'"""
+    return render('run', title='Бег')

@@ -111,3 +111,7 @@ def high_jump():
 def run():
     """Страница 'Бег'"""
     return render('run', title='Бег')
+@route('/jump')
+def run():
+    """Страница 'Прыжки в длину'"""
+    return render('jump', title='Прыжки в длину')

@@ -75,6 +75,7 @@
     <Content Include="views\index.tpl">
       <SubType>Code</SubType>
     </Content>
+    <Content Include="views\jump.tpl" />
     <Content Include="views\layout.tpl" />
     <Content Include="views\race_walking.tpl">
       <SubType>Code</SubType>

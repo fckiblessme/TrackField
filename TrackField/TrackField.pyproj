@@ -36,6 +36,11 @@
   <ItemGroup>
     <Folder Include="static\" />
     <Folder Include="static\content\" />
+    <Folder Include="static\content\images\shot_put\" />
+    <Folder Include="static\content\images\shot_put\legends\" />
+    <Folder Include="static\content\images\shot_put\athletes\" />
+    <Folder Include="static\content\images\shot_put\equipment\" />
+    <Folder Include="static\content\images\shot_put\technique\" />
     <Folder Include="static\fonts\" />
     <Folder Include="static\content\images\" />
     <Folder Include="static\content\images\pole_vault\" />
@@ -53,6 +58,19 @@
     <Content Include="static\content\images\pole_vault\athletes\mudrov.jpg" />
     <Content Include="static\content\images\pole_vault\pole-vault-hero.jpg" />
     <Content Include="static\content\images\pole_vault\technique\pole-vault-technique.jpg" />
+    <Content Include="static\content\images\shot_put\legends\legends_crouser.jpg" />
+    <Content Include="static\content\images\shot_put\legends\legends_fibingerova.jpg" />
+    <Content Include="static\content\images\shot_put\legends\legends_lisovskaya.jpg" />
+    <Content Include="static\content\images\shot_put\legends\legends_timmermann.jpg" />
+    <Content Include="static\content\images\shot_put\athletes\lisovskaya.jpg" />
+    <Content Include="static\content\images\shot_put\athletes\mironov.jpg" />
+    <Content Include="static\content\images\shot_put\athletes\omarova.jpg" />
+    <Content Include="static\content\images\shot_put\equipment\shot-put-comparison.jpg" />
+    <Content Include="static\content\images\shot_put\equipment\shot-put-holding.jpg" />
+    <Content Include="static\content\images\shot_put\equipment\shot-put-materials.jpg" />
+    <Content Include="static\content\images\shot_put\technique\shot-put-technique.jpg" />
+    <Content Include="static\content\images\shot_put\athletes\smirnov.jpg" />
+    <Content Include="static\content\images\shot_put\shot-put-hero.jpg" />
     <Content Include="static\content\site.css" />
     <Content Include="static\content\style.css">
       <SubType>Code</SubType>
@@ -82,6 +100,7 @@
     <Content Include="static\scripts\_references.js" />
     <Content Include="views\about.tpl" />
     <Content Include="views\contact.tpl" />
+    <Content Include="views\shot_put.tpl" />
     <Content Include="views\pole_vault.tpl" />
     <Content Include="views\high_jump.tpl">
       <SubType>Code</SubType>

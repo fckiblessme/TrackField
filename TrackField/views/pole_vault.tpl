@@ -35,7 +35,7 @@
             Правила на World Athletics →
         </a>
 
-         <!-- Фото техники прыжка -->
+
         <div class="technique-photo">
             <img src="/static/content/images/pole_vault/technique/pole-vault-technique.jpg" alt="Техника прыжка с шестом">
             <p class="photo-caption">Техника прыжка с шестом: разбег, отталкивание, переход через планку, приземление</p>
@@ -43,7 +43,7 @@
 
     </div>
 
-    <!-- БЛОК: Технические аспекты + ФОТО (перемещен сюда) -->
+
     <div class="section">
         <h2>Технические аспекты</h2>
         <div class="technique-grid">
@@ -68,11 +68,11 @@
        
     </div>
 
-    <!-- БЛОК: Легенды прыжков с шестом (С ФОТО) -->
+
     <div class="section">
         <h2>Легенды прыжков с шестом</h2>
         <div class="legends-grid">
-            <!-- Сергей Бубка -->
+
             <div class="legend-card">
                 <div class="legend-image">
                     <img src="/static/content/images/pole_vault/legends/legends_bubka.jpg" alt="Сергей Бубка">
@@ -85,7 +85,7 @@
                 </div>
             </div>
             
-            <!-- Арман Дюплантис -->
+
             <div class="legend-card">
                 <div class="legend-image">
                     <img src="/static/content/images/pole_vault/legends/legends_duplantis.jpg" alt="Арман Дюплантис">
@@ -98,7 +98,7 @@
                 </div>
             </div>
             
-            <!-- Елена Исинбаева -->
+
             <div class="legend-card">
                 <div class="legend-image">
                     <img src="/static/content/images/pole_vault/legends/legends_isinbaeva.jpg" alt="Елена Исинбаева">
@@ -111,7 +111,7 @@
                 </div>
             </div>
             
-            <!-- Дженнифер Сур -->
+
             <div class="legend-card">
                 <div class="legend-image">
                     <img src="/static/content/images/pole_vault/legends/legends_suhr.jpg" alt="Дженнифер Сур">
@@ -126,7 +126,6 @@
         </div>
     </div>
 
-    <!-- БЛОК: Мировые рекорды -->
     <div class="section">
         <h2>Мировые рекорды</h2>
         <table class="records-table">
@@ -173,7 +172,82 @@
         <p class="source">Источник: <a href="https://worldathletics.org/records" target="_blank">World Athletics</a></p>
     </div>
 
-    <!-- БЛОК: Эволюция шестов (БЕЗ ФОТО) -->
+
+<div class="section">
+    <h2>Разрядные нормативы (мужчины)</h2>
+    <table class="records-table">
+        <thead>
+            <tr>
+                <th>Звание/разряд</th>
+                <th>Результат</th>
+            </tr>
+        </thead>
+        <tbody>
+            <tr>
+                <td>Мастер спорта международного класса (МСМК)</td>
+                <td><strong>5.60 м</strong></td>
+            </tr>
+            <tr>
+                <td>Мастер спорта (МС)</td>
+                <td><strong>5.25 м</strong></td>
+            </tr>
+            <tr>
+                <td>Кандидат в мастера спорта (КМС)</td>
+                <td><strong>4.80 м</strong></td>
+            </tr>
+            <tr>
+                <td>I разряд</td>
+                <td><strong>4.40 м</strong></td>
+            </tr>
+            <tr>
+                <td>II разряд</td>
+                <td><strong>4.00 м</strong></td>
+            </tr>
+            <tr>
+                <td>III разряд</td>
+                <td><strong>3.60 м</strong></td>
+            </tr>
+        </tbody>
+    </table>
+
+    <h2 style="margin-top: 40px;">Разрядные нормативы (женщины)</h2>
+    <table class="records-table">
+        <thead>
+            <tr>
+                <th>Звание/разряд</th>
+                <th>Результат</th>
+            </tr>
+        </thead>
+        <tbody>
+            <tr>
+                <td>Мастер спорта международного класса (МСМК)</td>
+                <td><strong>4.50 м</strong></td>
+            </tr>
+            <tr>
+                <td>Мастер спорта (МС)</td>
+                <td><strong>4.10 м</strong></td>
+            </tr>
+            <tr>
+                <td>Кандидат в мастера спорта (КМС)</td>
+                <td><strong>3.70 м</strong></td>
+            </tr>
+            <tr>
+                <td>I разряд</td>
+                <td><strong>3.30 м</strong></td>
+            </tr>
+            <tr>
+                <td>II разряд</td>
+                <td><strong>2.90 м</strong></td>
+            </tr>
+            <tr>
+                <td>III разряд</td>
+                <td><strong>2.50 м</strong></td>
+            </tr>
+        </tbody>
+    </table>
+    
+</div>
+
     <div class="section">
         <h2>Эволюция шестов</h2>
         <p>Шесты для прыжков прошли долгий путь эволюции:</p>
@@ -186,7 +260,7 @@
         <p>Современные шесты изготавливаются из стекловолокна и углеволокна. Они способны изгибаться на 90° и более, накапливая энергию для выталкивания спортсмена вверх.</p>
     </div>
 
-    <!-- БЛОК: Известные прыгуны из России (список) -->
+
     <div class="section">
         <h2>Известные прыгуны из России</h2>
         <ul class="russian-athletes-list">
@@ -197,7 +271,7 @@
         </ul>
     </div>
 
-    <!-- НОВЫЙ БЛОК: Галерея российских чемпионов (С ФОТО) -->
+
     <div class="section">
         <h2>Галерея российских чемпионов</h2>
         <div class="russian-gallery">
@@ -243,7 +317,6 @@
 </div>
 
 
-    <!-- БЛОК: Часто задаваемые вопросы -->
     <div class="section">
         <h2>Часто задаваемые вопросы</h2>
         <div class="faq">
@@ -268,9 +341,6 @@
 </div>
 
 <style>
-/* ТОЛЬКО ДЛЯ СТРАНИЦЫ ПРЫЖКОВ С ШЕСТОМ */
-
-/* Hero изображение */
 .hero-image-section {
     margin: 30px 0 50px 0;
 }
@@ -292,7 +362,7 @@
     display: block;
 }
 
-/* Стили для легенд (с фото) - ЭТОГО НЕТ В ОБЩЕМ СТИЛЕ */
+
 .legends-grid {
     display: flex;
     flex-direction: column;
@@ -363,7 +433,7 @@
     text-decoration: none;
 }
 
-/* Стили для галереи российских чемпионов - ЭТОГО НЕТ В ОБЩЕМ СТИЛЕ */
+
 .russian-gallery {
     display: grid;
     grid-template-columns: repeat(auto-fit, minmax(220px, 1fr));
@@ -401,7 +471,7 @@
     margin: 10px 0 5px;
 }
 
-/* Стили для списка российских прыгунов - ЭТОГО НЕТ В ОБЩЕМ СТИЛЕ */
+
 .russian-athletes-list {
     margin: 25px 0;
     padding-left: 20px;
@@ -425,7 +495,7 @@
     border-bottom: 1px solid #008c7a;
 }
 
-/* Стили для технических аспектов - ЭТОГО НЕТ В ОБЩЕМ СТИЛЕ */
+
 .technique-grid {
     display: grid;
     grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
@@ -472,7 +542,7 @@
     font-size: 0.95rem;
 }
 
-/* Стили для списков - ЭТОГО НЕТ В ОБЩЕМ СТИЛЕ */
+
 .styled-list {
     margin: 20px 0 30px 0;
     padding-left: 20px;

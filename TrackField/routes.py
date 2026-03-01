@@ -112,3 +112,8 @@ def high_jump():
 def pole_vault():
     """Страница 'Прыжки с шестом'"""
     return render('pole_vault', title='Прыжки с шестом')
+
+@route('/shot-put')
+def shot_put():
+    """Страница 'Толкание ядра'"""
+    return render('shot_put', title='Толкание ядра')

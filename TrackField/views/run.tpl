@@ -219,7 +219,7 @@
     </ul>
 
     <h3>Где купить</h3>
-    <p><a href="https://www.nike.com/running" target="_blank">Nike Running</a> | <a href="https://www.adidas.ru/beg" target="_blank">Adidas Running</a> | <a href="https://www.street-sport.ru" target="_blank">Street Sport</a> (российский магазин)</p>
+    <p><a href="https://www.nike.com/running" target="_blank">Nike Running</a> | <a href="https://www.adidas.ru/beg" target="_blank">Adidas Running</a> | <a href="https://www.xn--80abggb0cvp7a.xn--p1ai/" target="_blank">Центр Бега</a> </p>
 </div>
 
 

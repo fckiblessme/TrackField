@@ -1,7 +1,7 @@
 % rebase('layout.tpl', title='Спортивная ходьба', year=year)
 
 <div class="discipline-hero">
-    <h1>🚶 Спортивная ходьба</h1>
+    <h1>Спортивная ходьба</h1>
     <p class="discipline-subtitle">Технически сложная дисциплина, где скорость сочетается со строгими правилами</p>
 </div>
 
@@ -90,9 +90,6 @@
 
     <div class="section">
         <h2>Техника спортивной ходьбы</h2>
-        <div class="technique-video">
-            <iframe width="100%" height="400" src="https://www.youtube.com/embed/nfLys_6sRA4" title="Спортивная ходьба: техника" frameborder="0" allowfullscreen></iframe>
-        </div>
         <p>Основные элементы техники:</p>
         <ol>
             <li>Активное движение тазом</li>
@@ -100,9 +97,7 @@
             <li>Постановка ноги с пятки перекатом на носок</li>
             <li>Постоянный контроль за выпрямлением ноги</li>
         </ol>
-        <a href="https://www.youtube.com/results?search_query=спортивная+ходьба+техника" target="_blank" class="btn">
-            Больше видео на YouTube →
-        </a>
+
     </div>
 
     <div class="section">

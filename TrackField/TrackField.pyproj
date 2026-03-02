@@ -18,7 +18,7 @@
     <SuppressCollectPythonCloudServiceFiles>true</SuppressCollectPythonCloudServiceFiles>
     <Name>TrackField</Name>
     <RootNamespace>TrackField</RootNamespace>
-    <InterpreterId>MSBuild|env1|$(MSBuildProjectFullPath)</InterpreterId>
+    <InterpreterId>MSBuild|env|$(MSBuildProjectFullPath)</InterpreterId>
     <WebBrowserPort>8080</WebBrowserPort>
   </PropertyGroup>
   <PropertyGroup Condition=" '$(Configuration)' == 'Debug' ">
@@ -46,6 +46,8 @@
     <Folder Include="static\content\images\shot_put\athletes\" />
     <Folder Include="static\content\images\shot_put\equipment\" />
     <Folder Include="static\content\images\shot_put\technique\" />
+    <Folder Include="static\content\skrypnikova\" />
+    <Folder Include="static\content\skrypnikova\css\" />
     <Folder Include="static\fonts\" />
     <Folder Include="static\images\" />
     <Folder Include="static\images\athletes\" />
@@ -74,6 +76,7 @@
     <Content Include="static\content\images\shot_put\athletes\smirnov.jpg" />
     <Content Include="static\content\images\shot_put\shot-put-hero.jpg" />
     <Content Include="static\content\site.css" />
+    <Content Include="static\content\skrypnikova\css\skrypnikova.css" />
     <Content Include="static\content\style.css">
       <SubType>Code</SubType>
     </Content>
@@ -133,15 +136,6 @@
     <Content Include="views\run.tpl" />
   </ItemGroup>
   <ItemGroup>
-    <Interpreter Include="env1\">
-      <Id>env1</Id>
-      <Version>0.0</Version>
-      <Description>env1 (Python 3.13 (64-bit))</Description>
-      <InterpreterPath>Scripts\python.exe</InterpreterPath>
-      <WindowsInterpreterPath>Scripts\pythonw.exe</WindowsInterpreterPath>
-      <PathEnvironmentVariable>PYTHONPATH</PathEnvironmentVariable>
-      <Architecture>X64</Architecture>
-    </Interpreter>
     <Interpreter Include="env\">
       <Id>env</Id>
       <Version>0.0</Version>

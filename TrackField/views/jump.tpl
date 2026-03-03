@@ -23,7 +23,7 @@
 
 
 <div class="section">
-    <h3>Легенды прыжков в длину</h3>
+    <h3>Легенды прыжка в длину</h3>
     <div class="athletes-grid">
         <div class="athlete-card">
             <img src="/static/images/athletes/mike.jpg" alt="Майк Пауэлл" class="athlete-photo">
@@ -129,6 +129,33 @@
     </div>
 </div>
 
+<div class="section">
+    <h3>Выдающиеся российские спортсмены</h3>
+    <div class="athletes-grid">
+        <div class="athlete-card">
+            <img src="/static/images/athletes/koneva.jpg" alt="Екатерина Конева" class="athlete-photo">
+            <h3>Екатерина Конева</h3>
+            <p>Призёр чемпионата мира и Европы, чемпионка мира в помещении и многократная победительница международных и всероссийских соревнований в тройном прыжке.</p>
+            <a href="https://worldathletics.org/athletes/great-britain-ni/jonathan-edwards-14189549" target="_blank">Профиль →</a>
+        </div>
+        <div class="athlete-card">
+            <img src="/static/images/athletes/dmitriy.jpg" alt="Дмитрий Чижиков" class="athlete-photo">
+            <h3>Дмитрий Чижиков</h3>
+            <p>Многократный чемпион и призер России. Чемпион Европы среди молодёжи 2015г.</p>
+        </div>
+        <div class="athlete-card">
+            <img src="/static/images/athletes/dmitrieva.jpg" alt="Таисия Дмитриева" class="athlete-photo">
+            <h3>Таисия Дмитриева</h3>
+            <p>Многократная победительница и призёр первенств России в прыжках в длину и тройном, победительница Кубка России и бронзовый призёр чемпионатов России.</p>
+            <a href="https://rusathletics.info/family/sportsmenyi/athletes/dmitrieva-taisiya/" target="_blank">Профиль →</a>
+         </div>
+        <div class="athlete-card">
+            <img src="/static/images/athletes/nastya.jpg" alt="Анастасия Кобылянских" class="athlete-photo">
+            <h3>Анастасия Кобылянских</h3>
+            <p>Чемпионка России, победитель и призёр крупных всероссийских стартов.</p>
+        </div>
+    </div>
+</div>
 
 <div class="section">
     <h4>Мировые рекорды (тройной прыжок)</h4>

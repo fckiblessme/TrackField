@@ -223,13 +223,3 @@
 </div>
 
 
-<div class="section">
-    <h2>Соревновательный календарь 2025</h2>
-    <ul class="events-list">
-        <li><strong>Чемпионат мира:</strong> 13–21 сентября, Токио — <a href="https://worldathletics.org" target="_blank">Сайт</a></li>
-        <li><strong>Бриллиантовая лига:</strong> Этапы с мая по сентябрь — <a href="https://www.diamondleague.com" target="_blank">Расписание</a></li>
-        <li><strong>Чемпионат России:</strong> Июль–август, Москва/Чебоксары — <a href="http://rusathletics.info" target="_blank">Календарь</a></li>
-    </ul>
-    <p>Трансляции: <a href="https://www.youtube.com/@WorldAthletics" target="_blank">YouTube World Athletics</a> | <a href="https://www.matchtv.ru" target="_blank">Матч ТВ</a></p>
-</div>
-

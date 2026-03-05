@@ -121,6 +121,11 @@ def run():
     """Страница 'Прыжки в длину'"""
     return render('jump', title='Прыжки в длину')
 
+@route('/relay')
+def relay():
+    """Страница 'Эстафеты'"""
+    return render('relay', title='Эстафеты')
+
 
 @route('/pole-vault')
 def pole_vault():

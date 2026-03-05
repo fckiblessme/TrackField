@@ -64,19 +64,6 @@
         <span class="card-link">Подробнее →</span>
     </a>
     
-    <a href="/javelin-throw" class="discipline-card">
-        <img src="/static/images/pushstick.jpg" alt="Метание копья" class="discipline-image">
-        <h3>Метание копья</h3>
-        <p>Разбег, финальное усилие, угол вылета</p>
-        <span class="card-link">Подробнее →</span>
-    </a>
-    
-    <a href="/decathlon" class="discipline-card">
-        <img src="/static/images/mnogoborie.jpg" alt="Многоборье" class="discipline-image">
-        <h3>Многоборье</h3>
-        <p>Десятиборье, семиборье, универсальные спортсмены</p>
-        <span class="card-link">Подробнее →</span>
-    </a>
 </div>
 
 <!-- ИНТЕРЕСНЫЕ ФАКТЫ -->

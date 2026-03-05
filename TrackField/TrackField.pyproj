@@ -46,6 +46,8 @@
     <Folder Include="static\content\images\shot_put\athletes\" />
     <Folder Include="static\content\images\shot_put\equipment\" />
     <Folder Include="static\content\images\shot_put\technique\" />
+    <Folder Include="static\content\skrypnikova\" />
+    <Folder Include="static\content\skrypnikova\css\" />
     <Folder Include="static\fonts\" />
     <Folder Include="static\images\" />
     <Folder Include="static\images\athletes\" />
@@ -74,6 +76,7 @@
     <Content Include="static\content\images\shot_put\athletes\smirnov.jpg" />
     <Content Include="static\content\images\shot_put\shot-put-hero.jpg" />
     <Content Include="static\content\site.css" />
+    <Content Include="static\content\skrypnikova\css\skrypnikova.css" />
     <Content Include="static\content\style.css">
       <SubType>Code</SubType>
     </Content>
@@ -85,6 +88,22 @@
     <Content Include="static\content\images\pole_vault\legends\legends_duplantis.jpg" />
     <Content Include="static\content\images\pole_vault\legends\legends_isinbaeva.jpg" />
     <Content Include="static\content\images\pole_vault\legends\legends_suhr.jpg" />
+    <Content Include="static\images\alekseyvoevodin.jpg" />
+    <Content Include="static\images\elenalashmanova.jpg" />
+    <Content Include="static\images\fosbury.jpg" />
+    <Content Include="static\images\highjump.jpg" />
+    <Content Include="static\images\jumpwithstick.jpg" />
+    <Content Include="static\images\kostadinova.jpg" />
+    <Content Include="static\images\lasitskene.jpg" />
+    <Content Include="static\images\longjump.jpg" />
+    <Content Include="static\images\mnogoborie.jpg" />
+    <Content Include="static\images\pushball.jpg" />
+    <Content Include="static\images\pushstick.jpg" />
+    <Content Include="static\images\racewalking.jpg" />
+    <Content Include="static\images\run.jpg" />
+    <Content Include="static\images\sergeymorozov.jpg" />
+    <Content Include="static\images\sotomayor.jpg" />
+    <Content Include="static\images\yohanndiniz.jpg" />
     <Content Include="static\scripts\bootstrap.js" />
     <Content Include="static\scripts\bootstrap.min.js" />
     <Content Include="static\scripts\jquery-1.10.2.intellisense.js" />

@@ -116,6 +116,17 @@ def run():
     """Страница 'Бег'"""
     return render('run', title='Бег')
 
+@route('/jump')
+def run():
+    """Страница 'Прыжки в длину'"""
+    return render('jump', title='Прыжки в длину')
+
+@route('/relay')
+def relay():
+    """Страница 'Эстафеты'"""
+    return render('relay', title='Эстафеты')
+
+
 @route('/pole-vault')
 def pole_vault():
     """Страница 'Прыжки с шестом'"""
@@ -125,3 +136,4 @@ def pole_vault():
 def shot_put():
     """Страница 'Толкание ядра'"""
     return render('shot_put', title='Толкание ядра')
+

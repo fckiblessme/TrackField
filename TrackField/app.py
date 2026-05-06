@@ -7,6 +7,8 @@ import sys
 # Подключаем маршруты из отдельного файла
 import routes
 
+sys.stdout.reconfigure(encoding='utf-8')
+
 # Раздача статических файлов (CSS, JS, картинки)
 @route('/static/<filepath:path>')
 def server_static(filepath):

@@ -1,11 +1,11 @@
 ﻿<!DOCTYPE html>
 <html>
 <head>
-    <link rel="stylesheet" href="/static/content/skrypnikova/css/skrypnikova.css">
     <meta charset="utf-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>{{ title }} - Мир легкой атлетики</title>
     <link rel="stylesheet" type="text/css" href="/static/content/style.css" />
+    <link rel="stylesheet" href="/static/content/skrypnikova/css/skrypnikova.css">
     <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@300;400;500;700&display=swap" rel="stylesheet">
 </head>
 
@@ -22,14 +22,11 @@
                         <li><a href="/race-walking" {{'class=active' if title=='Спортивная ходьба' else ''}}>Спортивная ходьба</a></li>
                         <li><a href="/high-jump" {{'class=active' if title=='Прыжки в высоту' else ''}}>Прыжки в высоту</a></li>
                         <li><a href="/run" {{'class=active' if title=='Бег' else ''}}>Бег</a></li>
-<<<<<<< HEAD
                         <li><a href="/jump" {{'class=active' if title=='Прыжки в длину' else ''}}>Прыжки в длину</a></li>
                         <li><a href="/relay" {{'class=active' if title=='Эстафеты' else ''}}>Эстафеты</a></li>
-=======
-                        <li><a href="/long-jump" {{'class=active' if title=='Прыжки в длину' else ''}}>Прыжки в длину</a></li>
->>>>>>> origin/master
                         <li><a href="/pole-vault" {{'class=active' if title=='Прыжки с шестом' else ''}}>Прыжки с шестом</a></li>
                         <li><a href="/shot-put" {{'class=active' if title=='Толкание ядра' else ''}}>Толкание ядра</a></li>
+                        <li><a href="/new-competitions" {{'class=active' if title=='Актуальные старты' else ''}}>Соревнования</a></li>
                         <li><a href="/about" {{'class=active' if title=='О нас' else ''}}>О нас</a></li>
                     </ul>
                 </nav>

@@ -137,3 +137,12 @@ def shot_put():
     """Страница 'Толкание ядра'"""
     return render('shot_put', title='Толкание ядра')
 
+@route('/new-competitions')
+def new_competitions():
+    """Страница 'Соревнования'"""
+    from competitions_form import load_competitions
+    from bottle import request
+    competitions_list = load_competitions()
+    error = request.query.error or ''
+    return render('new_competitions', title='Соревнования', competitions=competitions_list, error=error)
+

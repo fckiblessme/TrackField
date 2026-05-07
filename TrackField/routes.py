@@ -2,6 +2,7 @@ from datetime import datetime
 import bottle
 from bottle import route, template
 
+
 def render(tpl_name, **kwargs):
     kwargs['year'] = datetime.now().year
     return template(tpl_name, **kwargs)
@@ -117,7 +118,7 @@ def run():
     return render('run', title='Бег')
 
 @route('/jump')
-def run():
+def jump():
     """Страница 'Прыжки в длину'"""
     return render('jump', title='Прыжки в длину')
 
@@ -145,4 +146,28 @@ def new_competitions():
     competitions_list = load_competitions()
     error = request.query.error or ''
     return render('new_competitions', title='Соревнования', competitions=competitions_list, error=error)
+
+@route('/partners')
+def partners():
+    """Страница Партнеры"""
+    from partners_form import load_partners
+    from bottle import request
+    
+    partners_list = load_partners()
+    error = request.query.error or ''
+
+    return render(
+        'partners',
+        title='Партнеры',
+        partners=partners_list,
+        error=error
+    )
+
+
+from bottle import post, request, redirect as bottle_redirect
+import re
+import json
+import os
+from datetime import datetime
+from urllib.parse import quote
 

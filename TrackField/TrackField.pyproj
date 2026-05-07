@@ -18,7 +18,7 @@
     <SuppressCollectPythonCloudServiceFiles>true</SuppressCollectPythonCloudServiceFiles>
     <Name>TrackField</Name>
     <RootNamespace>TrackField</RootNamespace>
-    <InterpreterId>MSBuild|env|$(MSBuildProjectFullPath)</InterpreterId>
+    <InterpreterId>MSBuild|env2|$(MSBuildProjectFullPath)</InterpreterId>
     <WebBrowserPort>8080</WebBrowserPort>
   </PropertyGroup>
   <PropertyGroup Condition=" '$(Configuration)' == 'Debug' ">
@@ -32,6 +32,9 @@
   <ItemGroup>
     <Compile Include="app.py" />
     <Compile Include="competitions_form.py">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="partners_form.py">
       <SubType>Code</SubType>
     </Compile>
     <Compile Include="routes.py" />
@@ -61,6 +64,12 @@
   </ItemGroup>
   <ItemGroup>
     <Content Include="requirements.txt" />
+    <Content Include="static\content\data\competitions.json">
+      <SubType>Code</SubType>
+    </Content>
+    <Content Include="static\content\data\partners.json">
+      <SubType>Code</SubType>
+    </Content>
     <Content Include="static\content\images\pole_vault\athletes\feofanova.jpg" />
     <Content Include="static\content\images\pole_vault\athletes\isinbaeva.jpg" />
     <Content Include="static\content\images\pole_vault\athletes\morgunov.jpg" />
@@ -127,6 +136,9 @@
     <Content Include="views\new_competitions.tpl" />
     <Content Include="views\contact.tpl" />
     <Content Include="views\about.tpl" />
+    <Content Include="views\partners.tpl">
+      <SubType>Code</SubType>
+    </Content>
     <Content Include="views\relay.tpl">
       <SubType>Code</SubType>
     </Content>
@@ -146,6 +158,15 @@
     <Content Include="views\run.tpl" />
   </ItemGroup>
   <ItemGroup>
+    <Interpreter Include="env2\">
+      <Id>env2</Id>
+      <Version>0.0</Version>
+      <Description>env2 (Python 3.13 (64-bit))</Description>
+      <InterpreterPath>Scripts\python.exe</InterpreterPath>
+      <WindowsInterpreterPath>Scripts\pythonw.exe</WindowsInterpreterPath>
+      <PathEnvironmentVariable>PYTHONPATH</PathEnvironmentVariable>
+      <Architecture>X64</Architecture>
+    </Interpreter>
     <Interpreter Include="env\">
       <Id>env</Id>
       <Version>0.0</Version>

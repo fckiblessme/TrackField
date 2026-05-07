@@ -156,12 +156,19 @@ def partners():
     partners_list = load_partners()
     error = request.query.error or ''
 
-    return render(
-        'partners',
-        title='Партнеры',
-        partners=partners_list,
-        error=error
-    )
+    p_name = request.query.p_name or ''
+    p_desc = request.query.p_desc or ''
+    p_phone = request.query.p_phone or ''
+    p_date = request.query.p_date or ''
+
+    return render('partners', 
+                  title='Партнеры', 
+                  partners=partners_list, 
+                  error=error,
+                  p_name=p_name,
+                  p_desc=p_desc,
+                  p_phone=p_phone,
+                  p_date=p_date)
 
 
 from bottle import post, request, redirect as bottle_redirect

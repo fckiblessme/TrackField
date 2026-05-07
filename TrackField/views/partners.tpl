@@ -24,22 +24,22 @@
             
             <div class="comp-form-group">
                 <label>Наименование компании</label>
-                <input type="text" name="name">
+                <input type="text" name="name" value="{{ p_name }}">
             </div>
 
             <div class="comp-form-group">
                 <label>Описание деятельности</label>
-                <textarea name="description" rows="3"></textarea>
+                <textarea name="description" rows="3">{{ p_desc }}</textarea>
             </div>
 
             <div class="comp-form-group">
                 <label>Дата начала сотрудничества</label>
-                <input type="date" name="join_date">
+                <input type="date" name="join_date" value="{{ p_date }}">
             </div>
 
             <div class="comp-form-group">
                 <label>Контактный телефон</label>
-                <input type="text" name="phone" placeholder="+7 (XXX) XXX-XX-XX">
+                <input type="text" name="phone" placeholder="+7 (XXX) XXX-XX-XX" value="{{ p_phone }}">
             </div>
 
             <div class="comp-form-submit">
@@ -48,7 +48,6 @@
 
         </form>
     </div>
-
 
     <div class="section">
         <h2>Список партнерских компаний</h2>

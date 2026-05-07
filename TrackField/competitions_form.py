@@ -6,21 +6,34 @@ from datetime import datetime
 from urllib.parse import quote
 
 
-# функция для загрузки файла
+# Функция загрузки
 def load_competitions():
     filepath = 'static/content/data/competitions.json'
     if os.path.exists(filepath):
-        with open(filepath, 'r', encoding='utf-8') as f:
-            return json.load(f)
+        try:
+            f = open(filepath, 'r', encoding='utf-8')
+            data = json.load(f)
+            f.close() 
+            return data
+        except:
+            return []
     return []
 
-
-# функция для сохранения в файл
+# Функция сохранения
 def save_competitions(data):
     filepath = 'static/content/data/competitions.json'
-    os.makedirs(os.path.dirname(filepath), exist_ok=True)
-    with open(filepath, 'w', encoding='utf-8') as f:
+    
+    # Создаем папку, если она не существует
+    folder = os.path.dirname(filepath)
+    if not os.path.exists(folder):
+        os.makedirs(folder, exist_ok=True)
+    
+    try:
+        f = open(filepath, 'w', encoding='utf-8')
         json.dump(data, f, ensure_ascii=False, indent=4)
+        f.close() 
+    except:
+        print("Ошибка при записи файла")
 
 
 @post('/new-competitions', method='post')

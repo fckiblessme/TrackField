@@ -2,7 +2,6 @@
 
 <div class="discipline-hero">
     <h1>Прыжки в высоту</h1>
-    <p class="discipline-subtitle">Одна из самых зрелищных технических дисциплин легкой атлетики</p>
 </div>
 
 <div class="discipline-content">

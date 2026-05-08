@@ -29,7 +29,7 @@
 
             <div class="comp-form-group">
                 <label>Описание деятельности</label>
-                <textarea name="description" rows="3">{{ p_desc }}</textarea>
+                <textarea name="description" rows="3" style="resize: none;" >{{ p_desc }}</textarea>
             </div>
 
             <div class="comp-form-group">

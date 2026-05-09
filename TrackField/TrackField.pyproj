@@ -20,6 +20,9 @@
     <RootNamespace>TrackField</RootNamespace>
     <InterpreterId>MSBuild|env|$(MSBuildProjectFullPath)</InterpreterId>
     <WebBrowserPort>8080</WebBrowserPort>
+    <TestFramework>unittest</TestFramework>
+    <UnitTestPattern>test*.py</UnitTestPattern>
+    <UnitTestRootDirectory>.</UnitTestRootDirectory>
   </PropertyGroup>
   <PropertyGroup Condition=" '$(Configuration)' == 'Debug' ">
     <DebugSymbols>true</DebugSymbols>
@@ -32,6 +35,15 @@
   <ItemGroup>
     <Compile Include="app.py" />
     <Compile Include="competitions_form.py">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="tests\test_competitions_form.py">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="tests\__init__.py">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="competitions_form_validators.py">
       <SubType>Code</SubType>
     </Compile>
     <Compile Include="routes.py" />

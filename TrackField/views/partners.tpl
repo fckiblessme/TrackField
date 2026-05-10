@@ -39,7 +39,7 @@
 
             <div class="comp-form-group">
                 <label>Контактный телефон</label>
-                <input type="text" name="phone" placeholder="+7 (XXX) XXX-XX-XX" value="{{ p_phone }}">
+                <input type="text" name="phone" placeholder="7XXXXXXXXXX" value="{{ p_phone }}">
             </div>
 
             <div class="comp-form-submit">

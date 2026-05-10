@@ -3,9 +3,12 @@ import re
 from datetime import datetime
 
 def validate_phone(phone: str) -> bool:
-    """Проверяет телефон +7 (XXX) XXX-XX-XX"""
-    pattern = r'^\+7\s\(\d{3}\)\s\d{3}-\d{2}-\d{2}$'
-    return bool(re.match(pattern, phone))
+    """Проверяет телефон в формате 7XXXXXXXXXX"""
+    if not phone:
+        return False
+    cleaned = re.sub(r'\D', '', phone)
+    pattern = r'^7\d{10}$'
+    return bool(re.match(pattern, cleaned))
 
 def validate_date_ru(date_str: str) -> bool:
     """
@@ -30,20 +33,36 @@ def validate_date_iso(date_str: str) -> bool:
         return False
 
 class TestPhoneValidation(unittest.TestCase):
-    def test_valid_phone(self):
-        self.assertTrue(validate_phone("+7 (999) 123-45-67"))
 
-    def test_invalid_phone_no_plus(self):
-        self.assertFalse(validate_phone("7 (999) 123-45-67"))
-
-    def test_invalid_phone_no_brackets(self):
-        self.assertFalse(validate_phone("+7 999 123-45-67"))
-
-    def test_invalid_phone_wrong_separator(self):
-        self.assertFalse(validate_phone("+7 (999) 123.45.67"))
-
+    def test_valid_phone_plain(self):
+        self.assertTrue(validate_phone("79991234567"))
+    
+    def test_valid_phone_formatted(self):
+        self.assertTrue(validate_phone("7 999 123-45-67"))
+    
+    def test_valid_phone_with_plus(self):
+        self.assertTrue(validate_phone("+79991234567"))
+    
+    def test_valid_phone_with_brackets(self):
+        self.assertTrue(validate_phone("7(999)1234567"))
+    
+    def test_invalid_phone_starts_with_8(self):
+        self.assertFalse(validate_phone("89991234567"))
+    
+    def test_invalid_phone_too_short(self):
+        self.assertFalse(validate_phone("7999123456"))
+    
+    def test_invalid_phone_too_long(self):
+        self.assertFalse(validate_phone("799912345678"))
+    
+    def test_invalid_phone_with_letters(self):
+        self.assertFalse(validate_phone("7abc1234567"))
+    
     def test_empty_phone(self):
         self.assertFalse(validate_phone(""))
+    
+    def test_none_phone(self):
+        self.assertFalse(validate_phone(None))
 
 class TestDateRussian(unittest.TestCase):
     """Тесты для формата ДД-ММ-ГГГГ """

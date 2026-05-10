@@ -67,12 +67,17 @@ def add_partner():
         return bottle_redirect('/partners?error={0}{1}'.format(error_msg, back_params))
 
     # 4. Паттерн для телефона
-    phone_pattern = r'^\+7\s\(\d{3}\)\s\d{3}-\d{2}-\d{2}$'
-    if not re.match(phone_pattern, phone):
-        error_msg = quote("Неверный формат телефона! Пример: +7 (XXX) XXX-XX-XX")
+    # Убираем все нецифровые символы перед проверкой
+    cleaned_phone = re.sub(r'\D', '', phone)  
+    
+    phone_pattern = r'^7\d{10}$'
+    if not re.match(phone_pattern, cleaned_phone):
+        error_msg = quote("Неверный формат телефона! Пример: 7XXXXXXXXXX")
         return bottle_redirect('/partners?error={0}{1}'.format(error_msg, back_params))
+    
+    # Сохраняем очищенный номер
+    phone = cleaned_phone
 
-    # Загружаем текущий список
     partners = load_partners()
 
     # 5. Защита от дубликатов

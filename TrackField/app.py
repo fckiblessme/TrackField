@@ -13,7 +13,7 @@ sys.stdout.reconfigure(encoding='utf-8')
 def error404(error):
     return "<h1>404 Страница не найдена</h1><p>Вернитесь на <a href='/'>главную</a></p>"
 
-# Раздача статики (лучше без точки перед слэшем)
+# Раздача статики 
 @route('/static/<filepath:path>')
 def server_static(filepath):
     return static_file(filepath, root='static')

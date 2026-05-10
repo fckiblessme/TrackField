@@ -2,6 +2,7 @@ from datetime import datetime
 import bottle
 from bottle import route, template
 
+
 def render(tpl_name, **kwargs):
     kwargs['year'] = datetime.now().year
     return template(tpl_name, **kwargs)
@@ -117,7 +118,7 @@ def run():
     return render('run', title='Бег')
 
 @route('/jump')
-def run():
+def jump():
     """Страница 'Прыжки в длину'"""
     return render('jump', title='Прыжки в длину')
 

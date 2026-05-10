@@ -1,0 +1,37 @@
+[
+    {
+        "name": "Puma",
+        "description": "Производитель спортивных товаров, основанный в 1948 году",
+        "join_date": "2026-05-10",
+        "phone": "79918735511",
+        "added_date": "2026-05-10"
+    },
+    {
+        "name": "Alo",
+        "description": "Молодой бренд спортивной одежды",
+        "join_date": "2026-05-10",
+        "phone": "79992288929",
+        "added_date": "2026-05-10"
+    },
+    {
+        "name": "Bombar",
+        "description": "Производитель спортивных напитков",
+        "join_date": "2026-05-09",
+        "phone": "+7 (989) 111-52-67",
+        "added_date": "2026-05-08"
+    },
+    {
+        "name": "Abibias",
+        "description": "Clothes and shoes for runners",
+        "join_date": "2026-05-08",
+        "phone": "+7 (989) 111-22-33",
+        "added_date": "2026-05-08"
+    },
+    {
+        "name": "Nike",
+        "description": "Brand of shoes and clothes",
+        "join_date": "2026-05-08",
+        "phone": "+7 (989) 111-22-22",
+        "added_date": "2026-05-07"
+    }
+]

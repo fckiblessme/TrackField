@@ -3,21 +3,17 @@ import json
 import os
 from datetime import datetime
 from urllib.parse import quote
-from competitions_form_validators import (
-    validate_author,
-    validate_comp_name,
-    validate_description,
-    validate_phone,
-    validate_date
-)
-#  загрузка данных из файла 
+
+
+# Функция загрузки
 def load_competitions():
     filepath = 'static/content/data/competitions.json'
     if os.path.exists(filepath):
-        with open(filepath, 'r', encoding='utf-8') as f:
-            competitions = json.load(f)
-        
-        # определение текущей даты
+        try:
+            f = open(filepath, 'r', encoding='utf-8')
+            data = json.load(f)
+            f.close() 
+                    # определение текущей даты
         today = datetime.now().replace(hour=0, minute=0, second=0, microsecond=0)
         
         # разделение на будущие и прошедшие
@@ -42,15 +38,25 @@ def load_competitions():
                     future[j], future[j + 1] = future[j + 1], future[j]
         
         return future + past
-    
+        except:
+            return []
     return []
 
-# сохранение файла
+# Функция сохранения
 def save_competitions(data):
     filepath = 'static/content/data/competitions.json'
-    os.makedirs(os.path.dirname(filepath), exist_ok=True)
-    with open(filepath, 'w', encoding='utf-8') as f:
+    
+    # Создаем папку, если она не существует
+    folder = os.path.dirname(filepath)
+    if not os.path.exists(folder):
+        os.makedirs(folder, exist_ok=True)
+    
+    try:
+        f = open(filepath, 'w', encoding='utf-8')
         json.dump(data, f, ensure_ascii=False, indent=4)
+        f.close() 
+    except:
+        print("Ошибка при записи файла")
 
 @post('/new-competitions', method='post')
 def add_competition():

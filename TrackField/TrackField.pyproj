@@ -37,10 +37,13 @@
     <Compile Include="competitions_form.py">
       <SubType>Code</SubType>
     </Compile>
-    <Compile Include="partners_form.py">
+    <Compile Include="tests\test_competitions_form.py">
       <SubType>Code</SubType>
     </Compile>
-    <Compile Include="test_partners.py">
+    <Compile Include="tests\__init__.py">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="competitions_form_validators.py">
       <SubType>Code</SubType>
     </Compile>
     <Compile Include="routes.py" />

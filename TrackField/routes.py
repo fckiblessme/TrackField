@@ -143,20 +143,38 @@ def new_competitions():
     """Страница 'Соревнования'"""
     from competitions_form import load_competitions
     from bottle import request
-    from datetime import datetime
     competitions_list = load_competitions()
-    today = datetime.now().strftime("%Y-%m-%d")
     error = request.query.error or ''
-    return template('new_competitions', 
-        title='Соревнования',
-        year=datetime.now().year,
-        competitions=competitions_list, 
-        today=today,
-        error=error,
-        c_author=request.query.c_author or '',
-        c_comp_name=request.query.c_comp_name or '',
-        c_discipline=request.query.c_discipline or '',
-        c_event_date=request.query.c_event_date or '',
-        c_description=request.query.c_description or '',
-        c_phone=request.query.c_phone or ''
-    )
+    return render('new_competitions', title='Соревнования', competitions=competitions_list, error=error)
+
+@route('/partners')
+def partners():
+    """Страница Партнеры"""
+    from partners_form import load_partners
+    from bottle import request
+    
+    partners_list = load_partners()
+    error = request.query.error or ''
+
+    p_name = request.query.p_name or ''
+    p_desc = request.query.p_desc or ''
+    p_phone = request.query.p_phone or ''
+    p_date = request.query.p_date or ''
+
+    return render('partners', 
+                  title='Партнеры', 
+                  partners=partners_list, 
+                  error=error,
+                  p_name=p_name,
+                  p_desc=p_desc,
+                  p_phone=p_phone,
+                  p_date=p_date)
+
+
+from bottle import post, request, redirect as bottle_redirect
+import re
+import json
+import os
+from datetime import datetime
+from urllib.parse import quote
+

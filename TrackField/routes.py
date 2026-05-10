@@ -143,9 +143,23 @@ def new_competitions():
     """Страница 'Соревнования'"""
     from competitions_form import load_competitions
     from bottle import request
+    from datetime import datetime
     competitions_list = load_competitions()
+    today = datetime.now().strftime("%Y-%m-%d")
     error = request.query.error or ''
-    return render('new_competitions', title='Соревнования', competitions=competitions_list, error=error)
+    return template('new_competitions', 
+        title='Соревнования',
+        year=datetime.now().year,
+        competitions=competitions_list, 
+        today=today,
+        error=error,
+        c_author=request.query.c_author or '',
+        c_comp_name=request.query.c_comp_name or '',
+        c_discipline=request.query.c_discipline or '',
+        c_event_date=request.query.c_event_date or '',
+        c_description=request.query.c_description or '',
+        c_phone=request.query.c_phone or ''
+    ) 
 
 @route('/partners')
 def partners():

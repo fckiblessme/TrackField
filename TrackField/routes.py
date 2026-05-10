@@ -1,6 +1,7 @@
 from datetime import datetime 
 import bottle
-from bottle import route, template
+from bottle import route, template, request, redirect
+from reviews import *
 
 def render(tpl_name, **kwargs):
     kwargs['year'] = datetime.now().year
@@ -145,4 +146,12 @@ def new_competitions():
     competitions_list = load_competitions()
     error = request.query.error or ''
     return render('new_competitions', title='Соревнования', competitions=competitions_list, error=error)
+
+@route('/reviews')
+def reviews():
+    from bottle import request  
+    reviews_list = load_reviews() 
+    reviews_list.sort(key=lambda x: x.get('date', ''), reverse=True)
+    return render('reviews', title='Отзывы', reviews=reviews_list, form_data={}, errors={}, year=datetime.now().year)
+
 

@@ -1,7 +1,10 @@
 ﻿<!DOCTYPE html>
 <html>
 <head>
-    <meta charset="utf-8" />
+    <meta charset="utf-8" 
+    action="/reviews/add"
+    class="review-form"
+    accept-charset="UTF-8"/>
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>{{ title }} - Мир легкой атлетики</title>
     <link rel="stylesheet" type="text/css" href="/static/content/style.css" />
@@ -27,6 +30,7 @@
                         <li><a href="/pole-vault" {{'class=active' if title=='Прыжки с шестом' else ''}}>Прыжки с шестом</a></li>
                         <li><a href="/shot-put" {{'class=active' if title=='Толкание ядра' else ''}}>Толкание ядра</a></li>
                         <li><a href="/new-competitions" {{'class=active' if title=='Актуальные старты' else ''}}>Соревнования</a></li>
+                        <li><a href="/reviews" {{'class=active' if title=='Отзывы' else ''}}>Отзывы</a></li>
                         <li><a href="/about" {{'class=active' if title=='О нас' else ''}}>О нас</a></li>
                     </ul>
                 </nav>

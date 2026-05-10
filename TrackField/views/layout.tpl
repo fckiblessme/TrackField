@@ -30,7 +30,11 @@
                         <li><a href="/pole-vault" {{'class=active' if title=='Прыжки с шестом' else ''}}>Прыжки с шестом</a></li>
                         <li><a href="/shot-put" {{'class=active' if title=='Толкание ядра' else ''}}>Толкание ядра</a></li>
                         <li><a href="/new-competitions" {{'class=active' if title=='Актуальные старты' else ''}}>Соревнования</a></li>
+
                         <li><a href="/reviews" {{'class=active' if title=='Отзывы' else ''}}>Отзывы</a></li>
+
+                        <li><a href="/partners" {{'class=active' if title=='Партнеры' else ''}}>Партнеры</a></li>
+
                         <li><a href="/about" {{'class=active' if title=='О нас' else ''}}>О нас</a></li>
                     </ul>
                 </nav>

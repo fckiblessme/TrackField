@@ -25,7 +25,7 @@ def save_reviews(reviews):
         json.dump(reviews, f, ensure_ascii=False, indent=2)
 
 def validate_date(date_str):
-    """Проверяет дату: формат ГГГГ-ММ-ДД и не в будущем"""
+    """Проверяем дату"""
     try:
         input_date = datetime.strptime(date_str, '%Y-%m-%d')
         today = datetime.now()
@@ -37,6 +37,15 @@ def validate_date(date_str):
     except ValueError:
         return False, "Дата должна быть в формате ГГГГ-ММ-ДД"
 
+def validate_phone(phone):
+    """Проверка телефона"""
+    import re
+    pattern = r'^\+7 \(\d{3}\) \d{3}-\d{2}-\d{2}$'
+    
+    if re.match(pattern, phone):
+        return True, phone
+    else:
+        return False, "Телефон должен быть в формате +7 (XXX) XXX-XX-XX"
 
 @route('/reviews')
 def reviews_page():

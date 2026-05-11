@@ -3,6 +3,7 @@ from bottle import (route, run, template,
 static_file, request, redirect)
 import os
 import sys
+import reviews
 
 import routes
 
@@ -16,6 +17,13 @@ def error404(error):
 # Раздача статики 
 @route('/static/<filepath:path>')
 def server_static(filepath):
+    return static_file(filepath, root='./static')
+
+# # Обработка 404 ошибки (страница не найдена)
+# @route('/<:re:.*>')
+# def not_found(error):
+#     return template('404', title='Страница не найдена')
+
     return static_file(filepath, root='static')
 
 # Запуск сервера

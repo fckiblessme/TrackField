@@ -101,7 +101,7 @@
         <div class="athlete-card">
         <img src="/static/images/athletes/makarenko.jpg" alt="Кристина Макаренко" class="athlete-photo">
             <h3>Кристина Макаренко</h3>
-            <p>бронзовый призёр чемпионата Европы-2014, четырнадцатикратная чемпионка России, обладательница рекорда страны среди девушек (до 18 лет) на 60 и 100 м.</p>
+            <p>бронзовый призёр чемпионата Европы-2014, четырнадцатикратная чемпионка России, обладательница рекорда страны среди девушек (до 18 лет) на 60 и 100 м. </p>
             <a href="https://rusathletics.info/family/sportsmenyi/athletes/makarenko-kristina-andreevna/ "target="_blank">Профиль →</a>
         </div>
     </div>

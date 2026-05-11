@@ -129,10 +129,12 @@ class TestValidateDate(unittest.TestCase):
             self.assertTrue(validate_date(date))
 
     def test_F_date(self):
-        yesterday = (datetime.now() - timedelta(days=1)).strftime("%Y-%m-%d")
+
         list_F = [
-            "2020-01-01",          
-            yesterday             
+            "2040-01-01",          
+            (datetime.now() - timedelta(days=1)).strftime("%Y-%m-%d"),
+            (datetime.now() + timedelta(days=365*10)).strftime("%Y-%m-%d"),
+            "3040-01-01"
         ]
         for date in list_F:
             self.assertFalse(validate_date(date))

@@ -17,14 +17,17 @@ def validate_comp_name(comp_name):
         return False
     return True
 
-# проверка, что дата не раньше сегодняшней
+# проверка, что дата не раньше сегодняшней и не позже 5 лет
 def validate_date(event_date):
     if not event_date:
         return False
     try:
         event_date_obj = datetime.strptime(event_date, "%Y-%m-%d")
         today = datetime.now().replace(hour=0, minute=0, second=0, microsecond=0)
-        return event_date_obj >= today
+
+        max_date = today.replace(year=today.year + 5)        
+       
+        return today <= event_date_obj <= max_date
     except ValueError:
         return False
 

@@ -54,14 +54,15 @@ def add_partner():
         return bottle_redirect('/partners?error={0}{1}'.format(error_msg, back_params))
 
     # 2. Паттерн для наименования
-    name_pattern = r'^[A-Za-zА-Яа-яЁё0-9\s\-\.]{3,100}$'
+    name_pattern = r'^[A-Za-zА-Яа-яЁё0-9.]{3,100}$'
     if not re.match(name_pattern, name):
         error_msg = quote("Наименование содержит недопустимые символы!")
         return bottle_redirect('/partners?error={0}{1}'.format(error_msg, back_params))
 
     # 3. Проверка длины описания
-    if len(description) < 20 or len(description) > 1000:
-        error_msg = quote("Описание должно содержать от 20 до 1000 символов!")
+    desc_pattern = r'^[A-Za-zА-Яа-яЁё0-9\s\-\.\,\!\?\:\;\(\)\[\]\"\'\«\»]{20,1000}$'
+    if not re.match(desc_pattern, description.strip()):
+        error_msg = quote("Описание содержит недопустимые символы!")
         return bottle_redirect('/partners?error={0}{1}'.format(error_msg, back_params))
 
     # 4. Паттерн и проверка для телефона

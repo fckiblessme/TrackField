@@ -60,9 +60,9 @@ def add_partner():
         return bottle_redirect('/partners?error={0}{1}'.format(error_msg, back_params))
 
     # 3. Проверка длины описания
-    desc_pattern = r'^[A-Za-zА-Яа-яЁё0-9\s\-\.\,\!\?\:\;\(\)\[\]\"\'\«\»]{20,1000}$'
+    desc_pattern = r'^(?=.*[A-Za-zА-Яа-яЁё0-9])[A-Za-zА-Яа-яЁё0-9\s\-\.\,\!\?\:\;\(\)\[\]\"\'\«\»]{20,1000}$'
     if not re.match(desc_pattern, description.strip()):
-        error_msg = quote("Описание содержит недопустимые символы!")
+        error_msg = quote("Описание должно быть от 20 символов и содержать текст, а не только знаки!")
         return bottle_redirect('/partners?error={0}{1}'.format(error_msg, back_params))
 
     # 4. Паттерн и проверка для телефона

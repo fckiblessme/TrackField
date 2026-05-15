@@ -20,7 +20,7 @@
             </div>
         % end
 
-        <form action="/new-competitions" method="post" class="comp-form">
+        <form action="/new-competitions" method="post" class="comp-form"  style="max-width: 100% !important; width: 100% !important;">
             
             <div class="comp-form-group">
                 <label>Автор</label>

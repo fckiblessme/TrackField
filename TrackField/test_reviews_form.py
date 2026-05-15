@@ -1,6 +1,6 @@
 import unittest
 from datetime import datetime, timedelta
-from reviews import validate_phone, validate_date
+from reviews import validate_phone, validate_date, validate_name, validate_text
 
 class TestPhone(unittest.TestCase):
     def test_correct_phones(self):
@@ -69,6 +69,63 @@ class TestDate(unittest.TestCase):
         for date in incorrect_list:
             with self.subTest(date=date):
                 self.assertFalse(validate_date(date)[0])
+
+class TestName(unittest.TestCase):
+    def test_correct_names(self):
+        correct_list = [
+            "Анна",
+            "Анна-Мария",
+            "Иван",
+            "Alexander",
+            "Анна",
+            "A" * 50
+        ]
+        for name in correct_list:
+            with self.subTest(name=name):
+                valid, message = validate_name(name)
+                self.assertTrue(valid)
+
+    def test_incorrect_names(self):
+        incorrect_list = [
+            (""),
+            ("A"),
+            ("A" * 51),
+            ("   "),
+            ("   A   ")
+        ]
+        for name in incorrect_list:
+            with self.subTest(name=name):
+                valid, message = validate_name(name)
+                self.assertFalse(valid)
+
+class TestText(unittest.TestCase):
+    def test_correct_texts(self):
+         correct_list = [
+            "А" * 10,
+            "А" * 50,
+            "А" * 100,
+            "А" * 500,
+            "А" * 1000,
+            "Отличная тренировка! Всё понравилось.",
+            "А" * 100 + "Б" * 100 + "В" * 100
+        ]
+         for text in correct_list:
+            with self.subTest(text=text):
+                valid, message = validate_text(text)
+                self.assertTrue(valid)
+
+    def test_incorrect_texts(self):
+         incorrect_list = [
+            (""),
+            ("А" * 9),
+            ("А" * 1001),
+            ("   ")
+        ]
+         for text in incorrect_list:
+            with self.subTest(text=text):
+                valid, message = validate_text(text)
+                self.assertFalse(valid)
+
 
 if __name__ == '__main__':
     unittest.main()

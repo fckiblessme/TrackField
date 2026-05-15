@@ -19,6 +19,21 @@
                     <div class="error-message">{{errors['author']}}</div>
                 % end
             </div>
+
+            <div class="form-group">
+                <label for="rating">Оценка <span class="required">*</span></label>
+                <select id="rating" name="rating" class="{{'error-input' if errors.get('rating') else ''}}">
+                <option value="">Выберите оценку</option>
+                <option value="5" {{'selected' if form_data.get('rating') == '5' else ''}}> 5 - Отлично</option>
+                <option value="4" {{'selected' if form_data.get('rating') == '4' else ''}}> 4 - Хорошо</option>
+                <option value="3" {{'selected' if form_data.get('rating') == '3' else ''}}> 3 - Нормально</option>
+                <option value="2" {{'selected' if form_data.get('rating') == '2' else ''}}> 2 - Плохо</option>
+                <option value="1" {{'selected' if form_data.get('rating') == '1' else ''}}> 1 - Ужасно</option>
+                </select>
+                % if errors.get('rating'):
+                <div class="error-message">{{errors['rating']}}</div>
+                % end
+            </div>
             
             <div class="form-group">
                 <label for="text">Ваше мнение <span class="required">*</span></label>
@@ -84,6 +99,11 @@
                                 <span class="author-icon"></span>
                                 <strong>{{review['author']}}</strong>
                             </div>
+                             <div class="review-rating">
+                             % if review.get('rating'):
+                             Оценка: {{review['rating']}}/5
+                             % end
+                             </div>
                             <div class="review-date">
                                 {{review['date']}}
                             </div>
@@ -99,3 +119,4 @@
             </div>
         % end
     </div>
+

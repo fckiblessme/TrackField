@@ -932,6 +932,12 @@ body {
     font-size: 1.1rem;
 }
 
+/*Отображение оценки*/
+.review-rating {
+    color: var(--dark-gray);
+    font-size: 0.9rem;
+}
+
 /* Секция формы */
 .review-form-section {
     background: linear-gradient(135deg, var(--dark-gray), #1a1a1a);
@@ -963,6 +969,7 @@ body {
         font-weight: 600;
     }
 
+    /*Звездочка красная*/
 .required {
     color: #ff6b6b;
 }
@@ -978,6 +985,7 @@ body {
     transition: all 0.3s ease;
 }
 
+/*Клик на поле*/
     .form-group input:focus,
     .form-group textarea:focus {
         outline: none;
@@ -985,12 +993,14 @@ body {
         box-shadow: 0 0 0 3px rgba(0,168,150,0.2);
     }
 
+/*Ошибка в поле*/
     .form-group input.error-input,
     .form-group textarea.error-input {
         border-color: #e74c3c;
         background: #fee;
     }
 
+/*Текст ошибки под полем*/
 .error-message {
     color: #ff6b6b;
     font-size: 14px;
@@ -1009,6 +1019,7 @@ body {
     margin-top: 5px;
 }
 
+/*Ряд с двумя полями*/
 .form-row {
     display: flex;
     gap: 20px;
@@ -1018,6 +1029,7 @@ body {
     flex: 1;
 }
 
+/*Расположение кнопок в ряд по центру*/
 .form-actions {
     display: flex;
     gap: 15px;
@@ -1025,6 +1037,7 @@ body {
     margin-top: 30px;
 }
 
+/*Общие стили для кнопок*/
 .btn-submit,
 .btn-reset {
     padding: 12px 30px;
@@ -1036,17 +1049,20 @@ body {
     transition: transform 0.2s ease, box-shadow 0.2s ease;
 }
 
+/*Зеленая кнопка*/
 .btn-submit {
     background: var(--accent);
     color: white;
 }
 
+/*Действия при наведении на зеленую кнопку*/
     .btn-submit:hover {
         transform: translateY(-2px);
         box-shadow: 0 5px 15px rgba(0,0,0,0.2);
         background: #00816b;
     }
 
+/*Кнопка очистки формы*/
 .btn-reset {
     background: rgba(255,255,255,0.2);
     color: white;
@@ -1076,6 +1092,7 @@ body {
     margin: 0 auto;
 }
 
+/*Карточка отзыва*/
 .review-card {
     background: white;
     border-radius: 15px;
@@ -1093,6 +1110,7 @@ body {
         box-shadow: 0 10px 30px rgba(0,0,0,0.15);
     }
 
+/*Верхняя часть карточки*/
 .review-header {
     display: flex;
     justify-content: space-between;
@@ -1102,17 +1120,20 @@ body {
     margin-bottom: 15px;
 }
 
+/*Имя автора*/
 .review-author {
     font-size: 1.1rem;
     color: var(--dark-gray);
     font-weight: bold;
 }
 
+/*Дата*/
 .review-date {
     color: #888;
     font-size: 0.9rem;
 }
 
+/*Текст отзыва*/
 .review-content p {
     color: #555;
     line-height: 1.6;
@@ -1123,6 +1144,7 @@ body {
     overflow-y: auto;
 }
 
+/*Нижняя часть карточки*/
 .review-footer {
     border-top: 1px solid var(--light-gray);
     padding-top: 12px;
@@ -1131,6 +1153,7 @@ body {
     font-size: 0.9rem;
 }
 
+/*Сообщение при отсутсвии отзывов*/
 .empty-state {
     text-align: center;
     padding: 60px 20px;
@@ -1164,7 +1187,24 @@ body {
         align-items: flex-start;
         gap: 5px;
     }
+    
 }
+/*Стиль для выпадающего списка с оценкой*/
+select#rating {
+    padding: 12px 15px;
+    font-size: 16px;
+    width: 100%;
+    max-width: 300px;
+    background-color: white;
+    border: 2px solid var(--light-gray);
+    border-radius: 8px;
+    cursor: pointer;
+}
+
+    select#rating option {
+        padding: 10px;
+        font-size: 15px;
+    }
 
 /* ============ СТИЛИ ДЛЯ СТРАНИЦЫ ПАРТНЕРОВ ============ */
 

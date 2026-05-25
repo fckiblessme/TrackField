@@ -102,7 +102,7 @@ def add_competition():
 
     # проверка даты
     if not validate_date(event_date):
-        return bottle_redirect('/new-competitions?error=' + quote('Дата не может быть раньше сегодняшнего дня!') + back_params)
+        return bottle_redirect('/new-competitions?error=' + quote('Дата должна быть не ранее сегодняшнего дня и не позднее 5 лет от текущей даты!') + back_params)
 
     # проверка описания
     if not validate_description(description):

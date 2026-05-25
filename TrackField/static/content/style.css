@@ -969,6 +969,17 @@ body {
         font-weight: 600;
     }
 
+    .form-group textarea {
+        width: 100%;
+        height: 120px;
+        resize: none;
+        padding: 10px;
+        font-size: 14px;
+        border: 1px solid #ddd;
+        border-radius: 8px;
+        box-sizing: border-box;
+    }
+
     /*Звездочка красная*/
 .required {
     color: #ff6b6b;

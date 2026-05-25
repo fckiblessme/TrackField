@@ -40,6 +40,7 @@
                 <textarea id="text" 
                           name="text" 
                           rows="5" 
+                          style="resize: none"
                           placeholder="Поделитесь своим опытом тренировок или соревнований..."
                           class="{{'error-input' if errors.get('text') else ''}}">{{form_data.get('text', '')}}</textarea>
                 % if errors.get('text'):
